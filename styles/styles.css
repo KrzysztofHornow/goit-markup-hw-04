@@ -71,6 +71,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .icons-header:hover,
 .icons-header:focus {
   fill: var(--blue);
@@ -87,6 +88,7 @@ body {
 }
 .team-card-icons {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 30px;
 }
@@ -142,6 +144,13 @@ body {
   background-color: var(--blue);
   fill: var(--white);
   cursor: pointer;
+}
+.our-clients {
+  padding: 94px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Nav-links and email/tel. */
@@ -205,6 +214,7 @@ body {
   list-style: none;
   line-height: 1.2;
   margin: 0;
+  gap: 50px;
 }
 
 .nav-style {
@@ -253,18 +263,23 @@ body {
   margin-bottom: 94px;
   list-style: none;
   justify-content: center;
+  align-items: center;
 }
 .product-card {
   border: var(--productborder) solid 1px;
   flex-basis: calc((100% - 90px) / 4);
   height: 404px;
   margin: 0;
+  cursor: pointer;
+}
+.product-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product-top {
   color: var(--notblack);
   font-weight: 700;
   font-size: 18px;
-  font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 2;
   margin: 20px 0 4px 24px;
@@ -415,7 +430,8 @@ body {
   width: 246px;
 }
 .footer-container {
-  flex-direction: column;
+  flex-direction: row;
+  display: flex;
   color: var(--white);
 }
 .address {
